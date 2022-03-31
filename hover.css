@@ -1,0 +1,31 @@
+#klikmenu:hover::after{
+    content: '';
+    padding:16.1%;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.528) ;
+    border-radius: 20px;
+    z-index: 2;
+}
+.nav-link{
+    transition: 0s;
+}
+.nav-link:hover{
+    background-color: rgba(0, 0, 0, 0.576);
+    border-radius: 10px;
+}
+
+#klikcontact:hover::after{
+    content: '';
+    padding:19%;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.528) ;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.medsos a:hover{
+   font-weight: bolder;
+   padding: 1vh;
+   border-radius: 10px;
+   background-color: black;
+}
