@@ -1,0 +1,16 @@
+.no1::after{
+ content: '';
+ padding: 30vh 50%;
+ background-color: rgba(0, 0, 0, 0.938);
+ position: absolute;
+}
+.no1::before{
+    content: 'Menu';
+    color: rgb(115, 119, 123);
+    font-size: 5vh;
+    padding: 0vh 4vh 1vh 4vh ;
+    border-radius: 10px;
+    border: 2px solid rgb(115, 119, 123);
+    position: absolute;
+    z-index: 1;
+   }

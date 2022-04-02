@@ -22,7 +22,5 @@ var teks = document.getElementById("teks");
       
        
 
-       
-   
 
     
