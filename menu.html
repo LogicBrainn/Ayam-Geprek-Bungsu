@@ -21,7 +21,7 @@
     />
     <title>Ayam Geprek Bungsu</title>
     <!-- link css -->
-    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="menuhover.css">
   </head>
   <body>
     <!-- navbar -->
@@ -60,7 +60,7 @@
           <div  class="col" style="padding-bottom: 50vh">
             <!-- menu1 -->
              <a >
-               <li  onclick="klik1()" style="display: flex; margin: 1vh; background-color: rgb(5, 5, 5);border-radius: 100px;border: 3px solid;border-right: none;">
+               <li class="menu"  onclick="index=0;klik()">
               <div
                 
                 id="gambar1"
@@ -92,7 +92,7 @@
             </li></a>
             <!-- menu2 -->
              <a >
-               <li  onclick="klik2()" style="display: flex; margin: 1vh; background-color: rgb(5, 5, 5);border-radius: 100px;border: 3px solid;border-right: none;">
+               <li class="menu" onclick="index=1;klik()">
               <div
                 
                 id="gambar2"
@@ -124,7 +124,7 @@
             </li></a>
             <!-- menu3 -->
              <a >
-               <li  onclick="klik3()" style="display: flex; margin: 1vh; background-color: rgb(5, 5, 5);border-radius: 100px;border: 3px solid;border-right: none;">
+               <li class="menu"  onclick="index=2;klik()">
               <div
                 
                 id="gambar3"
@@ -156,7 +156,7 @@
             </li></a>
             <!-- menu4 -->
              <a >
-               <li  onclick="klik4()" style="display: flex; margin: 1vh; background-color: rgb(5, 5, 5);border-radius: 100px;border: 3px solid;border-right: none;">
+               <li class="menu" onclick="index=3;klik()" >
               <div
                 
                 id="gambar4"
@@ -198,12 +198,16 @@
     <!--  -->
     <section class="fixed-bottom text-center" style="background-color:rgba(0, 0, 0, 0.949);">
       <div >
+        <div id="hapus" style="display: flex;justify-content: end;">
+          
+        </div>
         <li style="display: flex;justify-content: center;">
+          
           <div style="color: white;text-align: center;">
             <div
             id="onclick"
             class=""
-        
+          
           >
           </div>
          
@@ -211,12 +215,11 @@
           
     
      </li>
-     <div style="color: aliceblue;">
+     <div id="hilangkan2" style="color: aliceblue;">
       <h3 id="onnama"></h3>
       <h6 id="harga"></h6>
       <div id="ditotal">
-        <input id="dikali" type="number" placeholder="Mau pesan berapa?" style="background-color: white;"> 
-        <button type="button" onclick="cetak()" style="padding: 1vh 3vh;border-radius:20px ;">Klik</button>
+       
         <h6 id="total"></h6>
       </div>
      
@@ -240,7 +243,7 @@
           style="color: rgb(175, 72, 72); text-decoration: none"
           >@logicbrainn</a
         >
-      </p>
+      </p> 
     </footer>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
@@ -249,5 +252,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="klikmenu.js"></script>
+   
   </body>
 </html>

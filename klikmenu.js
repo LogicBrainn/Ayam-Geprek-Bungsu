@@ -13,54 +13,41 @@ var dikliknama=document.getElementById("onnama");
 var harga = document.getElementById("harga");
 var hargaMenu=[12000,15000,9000,7000];
 
-var index;
-// untuk fungsi ketika di total
-var total =document.getElementById("total")
 
 
-function cetak(){
-var dikali=document.getElementById("dikali").value;
-total.innerHTML='Total : Rp. '+hargaMenu[index]*dikali+" ,00";
-}
-
+// untuk tombol menghapus menu yang telah di klik
+var hapus = document.getElementById("hapus");
 // untuk fungsi ketika kita memilih salah satu menu
-function klik1(){
+function isi(){
     total.innerHTML="";
-    diklik.style=" padding: 20vh;background-size: 100%;border-radius: 50%;transition:.4s;"
-    diklik.style.backgroundImage=menu[0].style.backgroundImage;
-    setTimeout(" dikliknama.innerHTML=nama[0].innerHTML",300);
-    setTimeout("harga.innerHTML='Harga : Rp. '+ hargaMenu[0]+ ' ,00'",300);
-    index=0;
+    hapus.innerHTML="<a onclick='hilangkan()' style='background-color: rgb(154, 146, 146);padding: 1vh 4vh 2vh;font-size:4vh;'>x</a>";
+    diklik.style=" padding: 20vh;background-size: 100%;border-radius: 50%;transition:.4s;";
+    diklik.style.backgroundImage=menu[index].style.backgroundImage;
+    setTimeout(" dikliknama.innerHTML=nama[index].innerHTML",300);
+    setTimeout("harga.innerHTML='Harga : Rp. '+ hargaMenu[index]+ ' ,00'",300);
+   
 }
-function klik2(){
-    total.innerHTML="";
-    diklik.style=" padding: 20vh;background-size: 100%;border-radius: 50%;transition:.4s;"
-    diklik.style.backgroundImage=menu[1].style.backgroundImage;
-    setTimeout(" dikliknama.innerHTML=nama[1].innerHTML",300);
-    setTimeout("harga.innerHTML='Harga : Rp. '+ hargaMenu[1]+ ' ,00'",300);
-    index=1;
+var index;
+function klik(){
+    
+    isi();
+    munculkan()
+    }
+// untuk fungsi ketika di total
+var munculDikali=document.getElementById("ditotal");
+function munculkan(){
+   setTimeout('munculDikali.innerHTML=\'<input id="dikali" type="number" placeholder="Mau pesan berapa?" style="background-color: white;"> <button type="button" onclick="cetak()" style="padding: 1vh 3vh;border-radius:20px ;">Klik</button> <h6 id="total"></h6>\'',300)
 }
-function klik3(){
-    total.innerHTML="";
-    diklik.style=" padding: 20vh;background-size: 100%;border-radius: 50%;transition:.4s;"
-    diklik.style.backgroundImage=menu[2].style.backgroundImage;
-    setTimeout(" dikliknama.innerHTML=nama[2].innerHTML",300);
-    setTimeout("harga.innerHTML='Harga : Rp. '+ hargaMenu[2]+ ' ,00'",300);
-    index=2;
+function cetak(){
+    var total =document.getElementById("total");
+    var dikali=document.getElementById("dikali").value;
+ total.innerHTML='Total : Rp. '+hargaMenu[index]*dikali+" ,00";
 }
-function klik4(){
-    total.innerHTML="";
-    diklik.style=" padding: 20vh;background-size: 100%;border-radius: 50%;transition:.4s;"
-    diklik.style.backgroundImage=menu[3].style.backgroundImage;
-    setTimeout(" dikliknama.innerHTML=nama[3].innerHTML",300);
-    setTimeout("harga.innerHTML='Harga : Rp. '+ hargaMenu[3]+ ' ,00'",300);
-    index=3;
+function hilangkan(){
+    document.getElementById("onclick").style="transition:.4s"
+    document.getElementById("onnama").innerHTML=""
+    document.getElementById("harga").innerHTML=""
+    document.getElementById("ditotal").innerHTML='<h6 id="total"></h6>' 
+    document.getElementById("hapus").innerHTML=""
 }
-function klik5(){
-    total.innerHTML="";
-    diklik.style=" padding: 20vh;background-size: 100%;border-radius: 50%;transition:.4s;"
-    diklik.style.backgroundImage=menu[4].style.backgroundImage;
-    setTimeout(" dikliknama.innerHTML=nama[4].innerHTML",300);
-    setTimeout("harga.innerHTML='Harga : Rp. '+ hargaMenu[4]+ ' ,00'",300);
-    index=4;
-}
+
