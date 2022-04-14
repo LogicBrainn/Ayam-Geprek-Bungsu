@@ -11,7 +11,7 @@ var dikliknama=document.getElementById("onnama");
 
 var harga = [document.getElementById("harga"),[12000,15000,9000,7000]];
 
-// untuk fungsi ketika kita memilih salah satu menu
+// untuk fungsi ketika memilih salah satu menu
 var index;
 function klik(){
     diklikGambar.style.backgroundImage=gambarPilihanMenu[index].style.backgroundImage;
@@ -29,7 +29,7 @@ function cetak(){
 }
 
 function hapus(){
- sectionMenuMuncul.style.top="100vh"
+ sectionMenuMuncul.style.top="120vh"
  total.innerHTML="Total : Rp.-"
 
 }
