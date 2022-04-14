@@ -17,7 +17,7 @@ function klik(){
     diklikGambar.style.backgroundImage=gambarPilihanMenu[index].style.backgroundImage;
     setTimeout(" dikliknama.innerHTML=nama[index].innerHTML",300);
     setTimeout("harga[0].innerHTML='Harga : Rp. '+ harga[1][index]+ ' ,00'",300); 
-    sectionMenuMuncul.style.top="30vh" 
+    sectionMenuMuncul.style.top="10vh" 
     }
 
     
