@@ -117,16 +117,13 @@
               >
               <div style="width: 90%;">
                 <h4 id="nama2">Geprek Spicy Saos Keju</h4>
-            
               </div>
-            
             </div>
             </li></a>
             <!-- menu3 -->
              <a >
                <li class="menu"  onclick="index=2;klik()">
               <div
-                
                 id="gambar3"
                 style="
                   padding: 10%;
@@ -139,26 +136,21 @@
               <div
                 style="
                   width: 100%;
-              
                   text-align: left;
                   justify-content: center;
                   display: flex;
                   align-items: center;
-                  
                 "
               >
               <div style="width: 90%;">
                 <h4 id="nama3">Geprek Sambal ijo</h4>
-            
               </div>
-            
             </div>
             </li></a>
             <!-- menu4 -->
              <a >
                <li class="menu" onclick="index=3;klik()" >
-              <div
-                
+              <div 
                 id="gambar4"
                 style="
                   padding: 10%;
@@ -176,57 +168,58 @@
                   justify-content: center;
                   display: flex;
                   align-items: center;
-                  
                 "
               >
               <div style="width: 90%;">
                 <h4 id="nama4">Geprek Sambal Korek</h4>
-            
               </div>
-            
             </div>
             </li></a>
-             
           </div>
-          
-         
-           
           </div>
         </div>
       </div>
     </section>
-    <!--  -->
-    <section class="fixed-bottom text-center" style="background-color:rgba(0, 0, 0, 0.949);">
+
+    <!-- muncul ketika diklik -->
+    <section id="sectionMenuMuncul" class="fixed-bottom text-center" style="background-color:rgba(0, 0, 0, 0.949);top: 100vh;transition: .5s;">
       <div >
-        <div id="hapus" style="display: flex;justify-content: end;">
-          
+        <div style="display: flex;justify-content: end;">
+          <a onclick='hapus()' style='background-color: rgb(154, 146, 146);padding: 1vh 4vh 2vh;font-size:4vh;'>x</a>
         </div>
-        <li style="display: flex;justify-content: center;">
-          
+        <div style="display: flex;justify-content: center;">
           <div style="color: white;text-align: center;">
             <div
-            id="onclick"
+            id="diklikGambar"
+            style=" padding: 20vh;background-size: 100%;border-radius: 50%;transition:.4s; background-image: url(img/menu2.jpeg);"
             class=""
-          
           >
           </div>
-         
+        
           </div>
-          
-    
-     </li>
-     <div id="hilangkan2" style="color: aliceblue;">
-      <h3 id="onnama"></h3>
-      <h6 id="harga"></h6>
-      <div id="ditotal">
+        </div>
+        <div style="color: white;">
+          <h3 id="onnama">nama</h3>
+        <h6 id="harga">harga</h6>
        
-        <h6 id="total"></h6>
-      </div>
+          <input id="dikali" 
+          type="number" 
+          placeholder="Mau pesan berapa?" 
+          style="background-color: white;"> 
+          <button type="button" onclick="cetak()" style="padding: 1vh 3vh;border-radius:20px ;">Klik</button>
+          <h6 id="total">Total : Rp.-</h6>
+        
+        </div>
+        
+        
      
-     </div>
+     
+
     
     </div>
     </section>
+    <!-- akhir ketika diklik menu -->
+
     <footer
       style="
         height: 4.1vh;
