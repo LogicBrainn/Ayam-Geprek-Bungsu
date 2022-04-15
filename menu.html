@@ -2,8 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, intial-scale=1" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- link untuk Bootstrap CSS/Style -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -45,57 +44,44 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
             <a class="nav-link" href="index.html#contact">Contact</a>
-            <a class="nav-link" href="#">Kategori</a>
+            
             <a class="nav-link" href="index.html">Kembali ke Home/Awal</a>
           </div>
         </div>
       </div>
     </nav>
-
     <!-- section menu-->
-    <section id="menu" style="background-color: rgb(99, 99, 99); text-align: center">
-   
-        <h3 class="" style="padding-top:11vh ;color: white;">Menu</h3>
-        <div class="row pt-2" style="padding-bottom: 6vh;color: white;">
-          <div id="isiMenu"  class="col" style="padding-bottom: 50vh">
-          </div>
-          </div>
-    </section>
+          <section id="isiMenu"  class="col" style="padding-bottom: 50vh;background-color: rgb(89, 89, 89);text-align: center;">
+            <h3 id="judulMenu" style="padding:12vh 0 5vh ;margin-bottom: 30vh;transition: 1s;">Menu</h3>
+          </section>
     <!-- muncul ketika diklik -->
-    <section id="sectionMenuMuncul" class="fixed-bottom text-center" style="background-color:rgba(0, 0, 0, 0.668);top: 120vh;transition: .5s;">
+    <section id="sectionMenuMuncul" class="fixed-bottom text-center" style="background-color:rgba(0, 0, 0, 0.827);top: 120vh;transition: .5s;">
       <div >
         <div style="display: flex;justify-content: end;">
           <a onclick='hapus()' style='background-color: rgb(154, 146, 146);padding: 1vh 4vh 2vh;font-size:4vh;'>x</a>
         </div>
+        <h3 id="onnama" style="margin: 3vh;">nama</h3>
         <div style="display: flex;justify-content: center;">
-          <div style="color: white;text-align: center;">
+          <div style="text-align: center;">
+            
             <div
             id="diklikGambar"
             style=" padding: 20vh;background-size: 100%;border-radius: 50%;transition:.4s; background-image: url(img/menu2.jpeg);"
             class=""
           >
           </div>
-        
           </div>
         </div>
-        <div style="color: white;">
-          <h3 id="onnama">nama</h3>
-        <h6 id="harga">harga</h6>
-       
+        <div>
+        <h6 id="harga" style="margin: 2vh;">harga</h6>
           <input id="dikali" 
           type="number" 
           placeholder="Mau pesan berapa?" 
           style="background-color: white;"> 
           <button type="button" onclick="cetak()" style="padding: 1vh 3vh;border-radius:20px ;">Klik</button>
-          <h6 id="total">Total : Rp.-</h6>
+          <h6 id="total" style="margin:2vh;">Total : Rp.-</h6>
         
         </div>
-        
-        
-     
-     
-
-    
     </div>
     </section>
     <!-- akhir ketika diklik menu -->

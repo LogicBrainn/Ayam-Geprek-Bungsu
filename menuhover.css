@@ -1,10 +1,14 @@
+*{
+    color: white;
+}
 /* untuk menu.html */
+
 .menu{
     padding: 2vh;
     display: flex;
     margin: 1vh;
     background-color: rgb(106, 49, 49);
-    
+    transition: 1s;
     border: 1px solid;border-right: none;
     border-left: none;
 }

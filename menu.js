@@ -1,8 +1,10 @@
 var isiMenu= document.getElementById("isiMenu");
-var listNama = ["Geprek Sambal Korek","Geprek Spicy Saos Keju","ketiga","keempat"];
+var listNama = ["Geprek Sambal Korek","Geprek Spicy Saos Keju","Geprek Sambal Ijo","Geprek Sambalado"];
 
-for(i=1;i<=4;i++){
-isiMenu.innerHTML=isiMenu.innerHTML+ '  <a>\
+
+for(var i=1;i<=4;i++){
+
+ isiMenu.innerHTML=isiMenu.innerHTML+ '  <a>\
 <li class=\'menu\'  onclick=\'index='+(i-1)+';klik()\'>\
 <div\
  \
@@ -18,7 +20,6 @@ isiMenu.innerHTML=isiMenu.innerHTML+ '  <a>\
 <div\
  style=\'\
    width: 100%;\
-\
    text-align: left;\
    justify-content: center;\
    display: flex;\
@@ -32,5 +33,10 @@ isiMenu.innerHTML=isiMenu.innerHTML+ '  <a>\
 </div>\
 \
 </div>\
-</li></a>'
+</li></a>';
+
 }
+
+var judulMenu =document.getElementById("judulMenu");
+setTimeout("judulMenu.style.marginBottom='0vh'",1000)
+
