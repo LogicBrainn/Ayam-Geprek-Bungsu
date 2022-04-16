@@ -24,12 +24,16 @@ function klik(){
 function cetak(){
     var dikali = document.getElementById("dikali");
     var total = document.getElementById("total");
-
+    var pesan = document.getElementById("pesan");
     total.innerHTML= "Total : Rp." + harga[1][index]*dikali.value +" ,00";
+    pesan.innerHTML='     <a style="padding: 1vh 3vh;border-radius:20px ;background-color: white; color: black;"target="_blank"href="https://api.whatsapp.com/send?phone=62895805349793&text= Halo kak saya mau order  '+dikali.value+" porsi "+dikliknama.innerHTML+" "+ total.innerHTML+'">Pesan</a>';
+    if(dikali.value==0){
+        pesan.innerHTML="";
+    }
 }
 
 function hapus(){
- sectionMenuMuncul.style.top="120vh"
- total.innerHTML="Total : Rp.-"
-
+ sectionMenuMuncul.style.top="120vh";
+ total.innerHTML="Total : Rp.-";
+ pesan.innerHTML= "";
 }
