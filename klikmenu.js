@@ -1,21 +1,17 @@
 
-var gambarPilihanMenu=[document.getElementById("gambar1"),document.getElementById("gambar2"),document.getElementById("gambar3"),
-document.getElementById("gambar4"),document.getElementById("gambar5")];
-var nama=[document.getElementById("nama1"),document.getElementById("nama2"),document.getElementById("nama3"),
-document.getElementById("nama4"),document.getElementById("nama5")];
 
 var sectionMenuMuncul = document.getElementById("sectionMenuMuncul")
 
 var diklikGambar=document.getElementById("diklikGambar");
 var dikliknama=document.getElementById("onnama");
 
-var harga = [document.getElementById("harga"),[12000,15000,9000,7000]];
+var harga = [document.getElementById("harga"),[12000,15000,9000,7000,10000,12000,12000,12000,15000,17000]];
 
 // untuk fungsi ketika memilih salah satu menu
 var index;
 function klik(){
-    diklikGambar.style.backgroundImage=gambarPilihanMenu[index].style.backgroundImage;
-    setTimeout(" dikliknama.innerHTML=nama[index].innerHTML",300);
+    diklikGambar.style.backgroundImage=document.getElementById("gambar"+(index+1)).style.backgroundImage;
+    setTimeout(" dikliknama.innerHTML=  document.getElementById('nama'+(index+1)).innerHTML",300);
     setTimeout("harga[0].innerHTML='Harga : Rp. '+ harga[1][index]+ ' ,00'",300); 
     sectionMenuMuncul.style.top="10vh" 
     }

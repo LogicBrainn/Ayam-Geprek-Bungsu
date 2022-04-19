@@ -1,8 +1,10 @@
 var isiMenu= document.getElementById("isiMenu");
-var listNama = ["Geprek Sambal Korek","Geprek Spicy Saos Keju","Geprek Sambal Ijo","Geprek Sambalado"];
+var listNama = ["Geprek Sambal Korek","Geprek Spicy Saos Keju","Geprek Sambal Ijo","Geprek Sambalado",
+"Ayam Original Sambal Sachet","Geprek Bungsu Sambal Cobek","Geprek Sambal Matah","Geprek Sambal Teri"
+,"Geprek Sambal Kecap","Geprek Bungsu Sambal Matah Mozarella"];
 
-
-for(var i=1;i<=4;i++){
+// menambahkan element menu pada html
+for(var i=1;i<=10;i++){
 
  isiMenu.innerHTML=isiMenu.innerHTML+ '  <a>\
 <li class=\'menu\'  onclick=\'index='+(i-1)+';klik()\'>\
